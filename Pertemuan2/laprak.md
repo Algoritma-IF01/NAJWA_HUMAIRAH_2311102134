@@ -177,24 +177,27 @@ func main() {
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	// Masukkan 5 data integer
+
+	fmt.Println("Masukkan 5 angka :")
 	var a, b, c, d, e int
-	fmt.Scanf("%d %d %d %d %d", &a, &b, &c, &d, &e)
+	fmt.Scan(&a, &b, &c, &d, &e)
 
-	// Masukkan 3 karakter
-	var chars [3]rune
-	fmt.Scanf(" %c %c %c", &chars[0], &chars[1], &chars[2])
+	fmt.Println("Output dari 5 angka :")
+	fmt.Printf("%c%c%c%c%c\n", a, b, c, d, e)
 
-	// Cetak hasil pertama: 5 karakter hasil konversi dari integer
-	fmt.Printf("%c %c %c %c %c\n", a, b, c, d, e)
+	fmt.Println("Masukkan 3 karakter :")
+	var input string
+	fmt.Scanln(&input)
 
-	// Cetak hasil kedua: 3 karakter yang sudah dimasukkan
-	fmt.Printf("%c %c %c\n", chars[0], chars[1], chars[2])
+	if len(input) == 3 {
+		fmt.Println("Output dari 3 karakter :")
+		fmt.Printf("%c%c%c\n", rune(input[0])+1, rune(input[1])+1, rune(input[2])+1)
+	} else {
+		fmt.Println("Input karakter tidak boleh lebih dari 3")
+	}
 }
 
 ```
