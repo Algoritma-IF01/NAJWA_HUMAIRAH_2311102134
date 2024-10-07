@@ -27,7 +27,7 @@ func main() {
 
 ### Output:
 
-![hello world](hello word.png)
+![hello word](hello word.png)
 
 ## Hipotenusa
 
