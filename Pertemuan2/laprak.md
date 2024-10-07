@@ -3,6 +3,32 @@
 
 <h1 align="center">Najwa Humairah - 2311102134</h1>
 
+## Hello World
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, World!")
+	var greetings = "selamat datang di dunia DAP"
+	var a, b int
+
+	fmt.Println(greetings)
+	fmt.Printf("Masukkan angka pertama :")
+	fmt.Scanln(&a)
+	fmt.Printf("Masukkan angka kedua :")
+	fmt.Scanln(&b)
+	fmt.Printf("%v + %v = %v\n", a, b, a+b)
+}
+
+```
+
+### Output:
+
+![hello world!](hello word.png)
+
 ## Hipotenusa
 
 ```go
@@ -121,62 +147,61 @@ func main(){
 ```go
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	var celcius, fahrenheit, kelvin, reamur float64
+	var celsius float64
 
-	fmt.Print("Temperatur celcius: ")
-	fmt.Scanln(&celcius)
-	reamur = celcius * 4 / 5
-	fahrenheit = (celcius * 9 / 5) + 32
-	kelvin = celcius + 273.15
+	//Meminta input suhu dalam celcius
+	fmt.Print("Masukkan temperatur celcius : ")
+	fmt.Scanln(&celsius)
 
-	fmt.Println("Derajat reamur: ", reamur)
-	fmt.Println("Derajat fahrenheit: ", fahrenheit)
-	fmt.Println("Derajat kelvin: ", kelvin)
+	//Menghitung suhu dalam berbagai satuan
+	fahrenheit := (celsius * 9 / 5) + 32
+	reamur := celsius * 4 / 5
+	kelvin := (fahrenheit + 459.67) * 5 / 9
 
+	fmt.Printf("Derajat Fahrenheit : %.2f\n", fahrenheit)
+	fmt.Printf("Derajat Reamur : %.2f\n", reamur)
+	fmt.Printf("Derajat Kelvin : %.2f\n", kelvin)
 }
+
 ```
 
 ### Output:
 
-![Alt text](Latihan4.png)
+![Latihan4](Latihan4.png)
 
 ## Latihan 5
 
 ```go
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-
-	fmt.Println("Masukkan 5 angka:")
+	// Masukkan 5 data integer
 	var a, b, c, d, e int
-	fmt.Scan(&a, &b, &c, &d, &e)
+	fmt.Scanf("%d %d %d %d %d", &a, &b, &c, &d, &e)
 
-	fmt.Println("Output dari 5 angka:")
-	fmt.Printf("%c%c%c%c%c\n", a, b, c, d, e)
+	// Masukkan 3 karakter
+	var chars [3]rune
+	fmt.Scanf(" %c %c %c", &chars[0], &chars[1], &chars[2])
 
-	fmt.Println("Masukkan 3 karakter:")
-	var input string
-	fmt.Scanln(&input)
+	// Cetak hasil pertama: 5 karakter hasil konversi dari integer
+	fmt.Printf("%c %c %c %c %c\n", a, b, c, d, e)
 
-	if len(input) == 3 {
-		fmt.Println("Output dari 3 karakter:")
-		fmt.Printf("%c%c%c\n", rune(input[0])+1, rune(input[1])+1, rune(input[2])+1)
-	} else {
-		fmt.Println("Input karakter harus terdiri dari 3 karakter")
-	}
+	// Cetak hasil kedua: 3 karakter yang sudah dimasukkan
+	fmt.Printf("%c %c %c\n", chars[0], chars[1], chars[2])
 }
+
 ```
 
 ### Output:
 
-![Alt text](Latihan5.png)
+![Latihan5](Latihan5.png)
 
 
 

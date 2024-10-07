@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println("Hello, World!")
 	var greetings = "selamat datang di dunia DAP"
 	var a, b int
 
