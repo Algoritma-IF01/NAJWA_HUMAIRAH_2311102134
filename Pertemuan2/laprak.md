@@ -1,0 +1,187 @@
+# <h1 align="center">Laporan Praktikum Modul 1</h1>
+
+
+<h1 align="center">Najwa Humairah - 2311102134</h1>
+
+## Hipotenusa
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var hipotenusa bool
+	var a, b, c int
+
+	fmt.Printf("Masukkan angka pertama :")
+	fmt.Scanln(&a)
+	fmt.Printf("Masukkan angka kedua :")
+	fmt.Scanln(&b)
+	fmt.Printf("Masukkan angka ketiga :")
+	fmt.Scanln(&c)
+	hipotenusa = (c * c) == (a*a + b*b)
+	fmt.Printf("sisi c adalah hipotenusa segitiga a,b,c: ", hipotenusa)
+}
+
+```
+
+### Output:
+
+![hipotenusa](Hipotenusa.png)
+
+## Latihan 1
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		satu, dua, tiga string
+		temp            string
+	)
+	fmt.Print("Masukkan input string :")
+	fmt.Scanln(&satu)
+	fmt.Print("Masukkan input string :")
+	fmt.Scanln(&dua)
+	fmt.Print("Masukkan input string :")
+	fmt.Scanln(&tiga)
+	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
+	temp = satu
+	satu = dua
+	dua = tiga
+	tiga = temp
+	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
+}
+
+```
+
+### Output:
+
+![Latihan1](Latihan1.png)
+
+## Latihan 2
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var tahun int
+
+	fmt.Print("Masukkan tahun : ")
+	fmt.Scanln(&tahun)
+
+	if tahun%4 == 0 {
+		fmt.Println("Tahun kabisat : True")
+	} else {
+		fmt.Println("Tahun kabisat : False")
+	}
+}
+
+```
+
+### Output:
+
+![Latihan2](Latihan2.png)
+
+## Latihan 3
+
+```go
+package main 
+
+import (
+	"fmt"
+	"math"
+)
+
+func main(){
+	var radius float64
+
+	fmt.Print("Masukkan jari-jari bola :")
+	fmt.Scan(&radius)
+
+	volume := (4.0/3.0) * math.Pi * math.Pow(radius, 3)
+	luasPermukaan := (4.0) * math.Pi * math.Pow(radius, 2)
+
+	fmt.Printf ("Bola dengan jari-jari %.2f memiliki volume %.4f dan luas kulit %4f\n", radius, volume, luasPermukaan)
+}
+
+```
+
+### Output:
+
+![Latihan3](Latihan3.png)
+
+## Latihan 4
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var celcius, fahrenheit, kelvin, reamur float64
+
+	fmt.Print("Temperatur celcius: ")
+	fmt.Scanln(&celcius)
+	reamur = celcius * 4 / 5
+	fahrenheit = (celcius * 9 / 5) + 32
+	kelvin = celcius + 273.15
+
+	fmt.Println("Derajat reamur: ", reamur)
+	fmt.Println("Derajat fahrenheit: ", fahrenheit)
+	fmt.Println("Derajat kelvin: ", kelvin)
+
+}
+```
+
+### Output:
+
+![Alt text](Latihan4.png)
+
+## Latihan 5
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+
+	fmt.Println("Masukkan 5 angka:")
+	var a, b, c, d, e int
+	fmt.Scan(&a, &b, &c, &d, &e)
+
+	fmt.Println("Output dari 5 angka:")
+	fmt.Printf("%c%c%c%c%c\n", a, b, c, d, e)
+
+	fmt.Println("Masukkan 3 karakter:")
+	var input string
+	fmt.Scanln(&input)
+
+	if len(input) == 3 {
+		fmt.Println("Output dari 3 karakter:")
+		fmt.Printf("%c%c%c\n", rune(input[0])+1, rune(input[1])+1, rune(input[2])+1)
+	} else {
+		fmt.Println("Input karakter harus terdiri dari 3 karakter")
+	}
+}
+```
+
+### Output:
+
+![Alt text](Latihan5.png)
+
+
+
+
+
+
+
+
