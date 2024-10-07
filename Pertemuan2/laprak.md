@@ -54,7 +54,7 @@ func main() {
 
 ### Output:
 
-![hipotenusa](Hipotenusa.png)
+![hipotenusa](hipotenusa.png)
 
 ## Latihan 1
 
@@ -86,7 +86,7 @@ func main() {
 
 ### Output:
 
-![Latihan1](Latihan1.png)
+![latihan1](latihan1.png)
 
 ## Latihan 2
 
@@ -112,7 +112,7 @@ func main() {
 
 ### Output:
 
-![Latihan2](Latihan2.png)
+![latihan2](latihan2.png)
 
 ## Latihan 3
 
@@ -140,7 +140,7 @@ func main(){
 
 ### Output:
 
-![Latihan3](Latihan3.png)
+![latihan3](latihan3.png)
 
 ## Latihan 4
 
@@ -170,7 +170,7 @@ func main() {
 
 ### Output:
 
-![Latihan4](Latihan4.png)
+![latihan4](latihan4.png)
 
 ## Latihan 5
 
@@ -204,7 +204,7 @@ func main() {
 
 ### Output:
 
-![Latihan5](Latihan5.png)
+![latihan5](latihan5.png)
 
 
 
