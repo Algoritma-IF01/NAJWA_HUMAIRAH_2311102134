@@ -258,7 +258,9 @@ func main() {
 ```
 ### Jawablah pertanyaan-pertanyaan berikut:
 1. Jika nam diberikan adalah 80.1, apa keluaran dari program tersebut? Apakah eksekusi program tersebut sesual spesifikasi soal? <br/>
-![tugas4a](tugas4a)
+
+![tugas4a](tugas4a.png)
+
 Jawab: <br/>
 Tidak sesuai, karena program tersebut tidak dapat dijalankan.
 
