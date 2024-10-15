@@ -266,6 +266,7 @@ Tidak sesuai, karena program tersebut tidak dapat dijalankan.
 
 2. Apa saja kesalahan dari program tersebut? Mengapa demikian? Jelaskan alur program seharusnya! <br/>
 Jawab: <br/>
+
 Penggunaan Variabel yang Tidak Tepat: <br/>
 
 - Dalam program ini, terdapat masalah pada penetapan nilai ke variabel nam. Variabel ini dideklarasikan sebagai float64, tetapi di beberapa bagian, Anda mencoba untuk mengisinya dengan nilai bertipe string (seperti nam = "A"). Hal ini tidak sesuai dengan tipe data yang telah didefinisikan dan menyebabkan kesalahan saat program dikompilasi. Sebaiknya gunakan variabel terpisah, seperti nmk, yang dideklarasikan sebagai string untuk menyimpan nilai NMK.
@@ -273,6 +274,12 @@ Penggunaan Variabel yang Tidak Tepat: <br/>
 Struktur Kondisi yang Tidak Sesuai: <br/>
 
 - Program menggunakan pernyataan if tanpa diikuti oleh else if, yang dapat menyebabkan lebih dari satu kondisi dieksekusi jika nilai nam memenuhi beberapa syarat. Misalnya, jika nam bernilai 80, maka kondisi if nam > 80 tidak akan pernah benar, tetapi kondisi lainnya masih akan diperiksa, meskipun itu tidak diperlukan. Ini berakibat pada perubahan nilai variabel nam, yang seharusnya menyimpan nilai akhir, menjadi string, sehingga informasi yang benar akan hilang.
+
+Alur Program yang Ideal
+
+- Input: Ambil nilai akhir mata kuliah dari pengguna dan simpan dalam variabel nam.
+- Pengecekan Kondisi: Gunakan struktur if diikuti dengan else if untuk menentukan nilai NMK berdasarkan nilai nam. Setiap kondisi seharusnya mencakup rentang nilai yang jelas, termasuk penanganan batas atas dan bawah.
+- Output: Setelah menentukan nilai NMK, tampilkan hasil dengan cara yang jelas.
 
 3. Perbaiki program tersebut! Ujilah dengan masulkanı: 93.5; 70.6; dan 49.5. Seharusnya keluaran yang diperoleh adalah "A", "B", dan D <br/>
 
