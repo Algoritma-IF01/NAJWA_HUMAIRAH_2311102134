@@ -216,7 +216,7 @@ func main() {
 ```
 ![tugas3](tugas3.png)
 
-## F. Nilai Akhir Mata Kuliah (Percabangan no. 2)
+## F. Nilai Akhir Mata Kuliah (Tugas Percabangan no. 2)
 
 #### Soal Tugas 4a percabangan
 
@@ -314,7 +314,7 @@ func main() {
 
 ![tugas4c](tugas4c.png)
 
-## G. Bilangan Prima dan Faktor b(Percabangan no. 3)
+## G. Bilangan Prima dan Faktor b(Tugas Percabangan no. 3)
 
 ```go
 package main
