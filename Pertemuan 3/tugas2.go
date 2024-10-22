@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Fungsi untuk menghitung akar dari 2 berdasarkan rumus di gambar
+// Fungsi untuk menghitung akar 2 berdasarkan rumus di gambar
 func sqrt2(K int) float64 {
 	result := 1.0 // Inisialisasi hasil dengan nilai 1.0 karena kita mengalikan suku-suku.
 	for k := 0; k <= K; k++ {
