@@ -17,7 +17,7 @@ func hitungBiaya(durasiJam int, durasiMenit int, isMember bool) int {
 	} else if durasiJam == 0 && durasiMenit > 0 {
 		totalJam = 1
 	}
-
+	
 	// Menentukan tarif berdasarkan status member
 	tarif := 0
 	if isMember {
