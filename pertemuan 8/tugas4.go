@@ -5,7 +5,6 @@ import "fmt"
 // Konstanta nMax untuk batas maksimal ID buku
 const nMax = 7919
 
-// struct Buku
 // Struktur untuk menyimpan data buku
 type Buku struct {
 	ID        int    // ID Buku
@@ -17,14 +16,12 @@ type Buku struct {
 	Rating    int    // Rating Buku
 }
 
-// struct DaftarBuku
 // Struktur untuk menyimpan daftar buku beserta jumlah buku yang ada
 type DaftarBuku struct {
-	Pustaka  []Buku // Slice yang menyimpan daftar buku
-	nPustaka int    // Jumlah buku dalam pustaka
+	Pustaka  []Buku 
+	nPustaka int    
 }
 
-// fungsi utk DaftarkanBuku
 // Fungsi ini digunakan untuk mendata buku-buku baru ke dalam daftar pustaka
 func DaftarkanBuku(pustaka *DaftarBuku, n int) {
 	for i := 0; i < n; i++ {
@@ -35,10 +32,9 @@ func DaftarkanBuku(pustaka *DaftarBuku, n int) {
 		// Menambahkan buku ke daftar pustaka
 		pustaka.Pustaka = append(pustaka.Pustaka, buku)
 	}
-	pustaka.nPustaka = n // Menyimpan jumlah pustaka
+	pustaka.nPustaka = n 
 }
 
-// fungsi utk CetakTerfavorit
 // Fungsi ini digunakan untuk menampilkan buku dengan rating tertinggi
 func CetakTerfavorit(pustaka DaftarBuku) {
 	if pustaka.nPustaka == 0 {
@@ -59,7 +55,6 @@ func CetakTerfavorit(pustaka DaftarBuku) {
 	fmt.Printf("Buku terfavorit: %s oleh %s (%s, %d) - Rating: %d\n", terfavorit.Judul, terfavorit.Penulis, terfavorit.Penerbit, terfavorit.Tahun, terfavorit.Rating)
 }
 
-// fungsi utk UrutBuku
 // Fungsi ini digunakan untuk mengurutkan buku berdasarkan rating menggunakan metode Insertion Sort
 func UrutBuku(pustaka *DaftarBuku) {
 	// Menggunakan Insertion Sort untuk mengurutkan berdasarkan rating
@@ -76,7 +71,6 @@ func UrutBuku(pustaka *DaftarBuku) {
 	}
 }
 
-// fungsi utk Cetak5Terbaru
 // Fungsi ini digunakan untuk menampilkan 5 buku dengan rating tertinggi
 func Cetak5Terbaru(pustaka DaftarBuku) {
 	fmt.Println("5 Buku dengan rating tertinggi:")
@@ -87,7 +81,6 @@ func Cetak5Terbaru(pustaka DaftarBuku) {
 	}
 }
 
-// fungsi utk mencari buku berdasarkan rating
 // Fungsi ini digunakan untuk mencari buku berdasarkan rating tertentu menggunakan Binary Search
 func CariBuku(pustaka DaftarBuku, rating int) {
 	// Menggunakan Binary Search untuk mencari buku berdasarkan rating

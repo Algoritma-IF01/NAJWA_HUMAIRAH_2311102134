@@ -23,7 +23,6 @@ func insertionSort(arr []int) {
 	}
 }
 
-//
 // Fungsi ini memeriksa apakah selisih antara elemen-elemen dalam array tetap sama.
 func cekJarakTetap(arr []int) (bool, int) {
 	if len(arr) < 2 { // Jika array memiliki kurang dari dua elemen, dianggap memiliki jarak tetap
